@@ -1,0 +1,46 @@
+'''
+fastfood.py
+
+nutrition facts for popular fast food burgers
+
+'''
+
+import sys
+
+# Units are in grams-
+#         restaurant,    sandwich,          calories, fat, carbs, protein
+burgers = [
+    ['A) ', 'McDonald''s', 'Big Mac',            563,  33,  44,    26],
+    ['B) ', 'Burger King', 'Whopper',            677,  37,  54,    31],
+    ['C) ', 'Wendy''s',    'Dave''s Single',     570,  34,  40,    30],
+    ['D) ', 'Chik-fil-A',  'Chicken Sandwich',   440,  19,  40,    28],
+    ['E) ', 'Five Guys',   'Bacon Cheeseburger', 920,  62,  40,    51]
+]
+
+""" Next HW
+# Average person burns roughly 100 calories per mile of running
+burn = 100
+
+print('How many miles do you have to jog to burn off the following burgers?')
+print()
+"""
+
+for i, burgers in enumerate(burgers):
+    print((f"{burgers[1]:12} {burgers[2]:18}  Calories: {burgers[3]}  Fat: {burgers[4]}  Carbs: {burgers[5]}  Protein: {burgers[6]}"))
+
+
+
+## next HW:
+"""
+Estimates how many miles a person needs to run to burn off
+a signature sandwich from popular fastfood restaurants.
+
+print()
+choice = input('Choose a letter, A, B, C,D, or E: ')
+choice = choice.lower()
+
+if choice == 'a':
+    print(f"{burgers[2]}")
+"""    
+
+sys.exit(0)
